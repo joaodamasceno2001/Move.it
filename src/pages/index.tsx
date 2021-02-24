@@ -1,9 +1,12 @@
-import { ExperienceBar } from "../components/ExperienceBar";
-import Head from "next/head";
-import { Profile } from "../components/Profile";
-import styles from "../styles/pages/Home.module.css";
 import { CompletedChallenges } from "../components/CompletedChallenges";
 import { Countdown } from "../components/Countdown";
+import { ExperienceBar } from "../components/ExperienceBar";
+import { Profile } from '../components/Profile';
+
+
+import Head from 'next/head';
+
+import styles from '../styles/pages/Home.module.css'
 
 export default function Home() {
   return (
@@ -12,16 +15,22 @@ export default function Home() {
         <title>Início | move.it</title>
       </Head>
 
-      <ExperienceBar />
-
+      <ExperienceBar/>
+      
       <section>
         <div>
-          <Profile />
-          <CompletedChallenges />
-          <Countdown />
+          <Profile/>
+          <CompletedChallenges/>
+          <Countdown/>
         </div>
-        <div></div>
+
+        <div>
+
+        </div>
       </section>
+
     </div>
-  );
+    
+
+  )
 }
